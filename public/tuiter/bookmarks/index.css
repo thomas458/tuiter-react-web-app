@@ -1,0 +1,62 @@
+.wd-bg-white{
+    background-color: white;
+}
+
+.wd-fg-black{
+    color: black;
+}
+
+.wd-fg-gray{
+    color: gray;
+}
+
+.wd-fg-lightgray{
+    color: lightgray;
+}
+
+.wd-left-margin{
+    margin-left: 12px;
+}
+
+.wd-padding-all-around{
+    padding: 12px;
+}
+
+.wd-rounded-images{
+    border-radius: 50%;
+}
+
+.wd-thin-border{
+    border-width: 2px;
+}
+
+.wd-border-solid{
+    border-style: solid;
+}
+
+.wd-border-light-gray{
+    border-color: lightgray;
+}
+
+.wd-image-size{
+    height: 48px;
+    width: 48px;
+}
+
+.wd-yellow{
+    color: yellow;
+}
+
+.wd-grid-left{
+    width: 20%;
+    float: left;
+}
+
+.wd-grid-main-content{
+    width: 80%;
+    float: left;
+}
+
+.wd-image-width{
+    width: 100%;
+}

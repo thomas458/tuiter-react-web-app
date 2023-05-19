@@ -1,0 +1,72 @@
+.wd-bg-darkgray{
+    background-color: darkgray;
+}
+
+.wd-fg-lightgray{
+    color: lightgray;
+}
+
+.wd-rounded-corners{
+    border-radius: 20px;
+}
+
+.wd-horizontal-list li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.wd-border-fat {
+    border-width: 0px 0px 5px 0px;
+}
+
+.wd-border-solid {
+    border-style: solid;
+}
+
+.wd-border-blue {
+    border-color: blue;
+}
+
+.wd-fg-white{
+    color: white;
+}
+
+.wd-fg-gray{
+    color: gray;
+}
+
+.wd-fullscreen{
+    width: 80%;
+}
+
+.wd-position-relative{
+    position: relative;
+}
+
+.wd-position-absolute{
+    position: absolute;
+}
+
+.wd-bottom-0{
+    bottom: 0px;
+}
+
+.wd-left-0{
+    left: 0px;
+}
+
+.wd-margin-bottom{
+    margin-bottom: 0px;
+}
+
+.wd-margin-top {
+    margin-top: 0px:
+}
+
+.wd-padding-top{
+    padding-top: 0px;
+}
+
+.wd-padding-bottom{
+    padding-bottom: 0px;
+}
