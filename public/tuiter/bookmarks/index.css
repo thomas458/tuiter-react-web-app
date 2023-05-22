@@ -28,6 +28,7 @@
 
 .wd-thin-border{
     border-width: 2px;
+    padding: 5px
 }
 
 .wd-border-solid{
@@ -47,10 +48,6 @@
     color: yellow;
 }
 
-.wd-grid-left{
-    width: 20%;
-    float: left;
-}
 
 .wd-grid-main-content{
     width: 80%;
@@ -60,3 +57,50 @@
 .wd-image-width{
     width: 100%;
 }
+
+.wd-grid-row{
+    clear:both
+}
+
+.wd-right-margin{
+    margin-right: 30px;
+}
+
+.wd-grid {
+    display: grid;
+    gap: 5px;
+}
+
+.wd-thin-border {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.wd-grid-left {
+    grid-row: 1 / span 2;
+}
+
+.wd-grid-right {
+    grid-column: 2;
+}
+
+.wd-padding-bottom{
+    padding-bottom: 10px;
+}
+.wd-pb-0{
+    padding-bottom: 0px;
+}
+
+.wd-border-radius {
+    border-radius: 10%;
+}
+
+.wd-position-absolute{
+    position: absolute;
+}
+
+.wd-position-relative{
+    position: relative;
+}
+
+
