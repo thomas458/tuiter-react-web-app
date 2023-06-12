@@ -1,5 +1,6 @@
 import {useDispatch} from "react-redux";
 import {likeTuit, unlikeTuit} from "../reducers/tuits-reducer.js"
+import { updateTuitThunk } from "../services/tuits-thunks";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
@@ -28,12 +29,14 @@ const TuitStats = ({tuit}) => {
             <div className="col-3 wd-icon-size">
 
                 {
-                    tuit.liked && <span onClick={() =>unlikeTuitHandler(tuit)}>
+                    tuit.liked && <span onClick={() => dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+                    }>
                     <i className="fa fa-heart mx-2" style={{color : "red"}}></i> {tuit.likes}
                 </span>
                 }
                 {
-                    !tuit.liked && <span onClick={() => likeTuitHandler(tuit)}>
+                    !tuit.liked && <span onClick={() => dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1 }))
+                    }>
                      <i className="fa fa-heart mx-2 fg-color-gray"></i> {tuit.likes}
                 </span>
                 }

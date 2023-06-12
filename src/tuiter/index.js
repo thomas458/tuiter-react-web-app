@@ -13,18 +13,19 @@ import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import LoginScreen from "./user/login";
+import RegisterScreen from "./user/register";
+import authReducer from "./reducers/auth-reducer";
 const store = configureStore(
     {reducer: {
         who: whoReducer,
-            tuits: tuitsReducer
-    }});
-
-
-
+        tuits: tuitsReducer,
+        user:  authReducer
+        }});
 
 function Tuiter() {
     return (
-        <Provider store={store}>
+
             <div>
                 <Nav />
                 <div className="row d-flex">
@@ -38,6 +39,8 @@ function Tuiter() {
                             <Route path="/notifications" element={<h1>Notifications</h1>}/>
                             <Route path="/bookmarks" element={<BookmarksScreen/>} />
                             <Route path="/profile" element={<ProfileScreen/>} />
+                            <Route path="/login"    element={<LoginScreen/>} />
+                            <Route path="/register" element={<RegisterScreen />} />
 
                         </Routes>
                     </div>
@@ -46,7 +49,6 @@ function Tuiter() {
                     </div>
                 </div>
             </div>
-        </Provider>
     )
 }
 export default Tuiter;
