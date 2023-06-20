@@ -11,6 +11,10 @@ function ProfileScreen() {
     const navigate = useNavigate();
     const save = () => { dispatch(updateUserThunk(profile)); };
 
+    const handleLogout = () => {
+        dispatch(logoutThunk());
+        navigate("/login")
+    }
     useEffect( ()=> {
         dispatch(profileThunk());
     }, []);
